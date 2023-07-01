@@ -82,7 +82,7 @@ public class TelaRelatorio extends javax.swing.JFrame {
         }
     }
 
-    private void mostrarTabelaMes(String ano) {
+    private void mostrarTabelaMesAno(String ano) {
         try {
 
             FileReader fr = new FileReader(nomeDoArquivoNoDiscoGastos);
@@ -667,7 +667,7 @@ public class TelaRelatorio extends javax.swing.JFrame {
                 throw new Exception("Ano inválido. O ano deve ser menor ou igual ao ano atual");
             }
 
-            mostrarTabelaMes(ano);
+            mostrarTabelaMesAno(ano);
 
             jFormattedTextFieldAno.setValue(null); //Limpar campo do ano
             this.ano = ano;
